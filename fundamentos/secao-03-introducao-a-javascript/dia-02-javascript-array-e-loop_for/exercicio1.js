@@ -20,19 +20,19 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma=0;
 let i=0;
     /*for (let val of numbers){
-        console.log(val);
-    }
+        console.log(val);}
     
     for(i=0;i<numbers.length;i+=1){
-        soma=soma+numbers[i];
-    }
+        soma=soma+numbers[i];}
     soma=soma/i;
     if(soma>20){
         console.log('Valor maior que 20, valor: '+soma);
     }else{
-        console.log('Valor menor que 20, Valor'+soma);
-    }
-    */
-   
-    
-   
+        console.log('Valor menor que 20, Valor'+soma);}
+    for(i=0;i<numbers.length;i+=1){
+        if(soma<numbers[i]){
+            soma=numbers[i];}}
+    console.log(soma);*/
+   for(i=1;i<=25;i+=1){
+   soma=i/2;
+    console.log(soma);}
