@@ -64,6 +64,16 @@
         tagbody.appendChild(tagh1);
         }
         createh1();
+        let createmain = (tagpai, tagfilho, classe) => {
+        let tagbody = document.querySelector(tagpai);
+        let tagh1 = document.createElement(tagfilho);
+        tagh1.className = classe;
+        tagbody.appendChild(tagh1);
+        }
+        createmain('body', 'main', 'main-content');
+        createmain('main', 'section', 'center-content');
+        
+
       // COLOQUE SEU CÓDIGO AQUI
     </script>
   </body>
