@@ -57,23 +57,36 @@
   </head>
   <body>
     <script>
-        let createh1 = () => {
-        let tagbody = document.querySelector('body');
-        let tagh1 = document.createElement('h1');
-        tagh1.innerHTML = `TrybeTrip - Agência de Viagens`;
+    let createh1 = (tagpai, tagfilho, texto) => {
+        let tagbody = document.querySelector(tagpai);
+        let tagh1 = document.createElement(tagfilho);
+        tagh1.innerHTML = texto;
         tagbody.appendChild(tagh1);
         }
-        createh1();
-        let createmain = (tagpai, tagfilho, classe) => {
+        createh1('body', 'h1', 'TrybeTrip - Agência de Viagens');
+        
+    let createtags = (tagpai, tagfilho, classe) => {
         let tagbody = document.querySelector(tagpai);
         let tagh1 = document.createElement(tagfilho);
         tagh1.className = classe;
         tagbody.appendChild(tagh1);
         }
-        createmain('body', 'main', 'main-content');
-        createmain('main', 'section', 'center-content');
-        
-
+        createtags('body', 'main', 'main-content');
+        createtags('main', 'section', 'center-content');
+        createh1('section', 'p', 'Algum Texto muito importante');
+        createtags('main', 'section', 'left-content');
+        createtags('main', 'section', 'right-content');
+    let createimg = () => {
+        let tagbody = document.querySelector('.left-content');
+        let tagh1 = document.createElement('img');
+        tagh1.src = 'https://picsum.photos/200';
+        tagh1.className = 'small-image';
+        tagbody.appendChild(tagh1);
+        }    
+        createimg();
+        createh1('main', 'h3', '');
+        createh1('main', 'h3', '');
+        createh1('main', 'h3', '');
       // COLOQUE SEU CÓDIGO AQUI
     </script>
   </body>
