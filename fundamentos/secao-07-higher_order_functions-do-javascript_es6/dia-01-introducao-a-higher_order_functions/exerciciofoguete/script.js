@@ -92,5 +92,13 @@ const expectedResult3 = {
   };
   
   const getNamedBook = () => {
-    // escreva seu código aqui
-  }
+    return books.find((book) => book.name.length === 26);
+  };
+  console.log(getNamedBook());
+  //Faça uma função que retorne true se todas as pessoas autoras tiverem nascido no século XX, ou false, caso contrário.
+  const expectedResult4 = false;
+
+  function everyoneWasBornOnSecXX() {
+    return books.every((book) => book.author.birthYear >= 1901 && book.author.birthYear <= 2000);
+  };
+  console.log(everyoneWasBornOnSecXX());
